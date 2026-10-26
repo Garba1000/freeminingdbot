@@ -7,11 +7,10 @@
   <title>MineHub — Gold Energy Mining</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="https://telemonix.com/sdk/telemonix-ads.js"></script>
-  <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
   <style>
     :root{--bg:#0b1020;--panel:#151f35;--panel2:#10192b;--text:#f5f7ff;--muted:#98a8c6;--green:#69e6b2;--gold:#ffc857;--blue:#76aaff;--border:#293653;--warn:#ffd48a}
     *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b2d4b,var(--bg) 65%);color:var(--text);font:14px/1.45 Arial,Helvetica,sans-serif}
-    .app{max-width:520px;margin:auto;padding:18px 15px 35px}.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.logo{font-size:23px;font-weight:800}.tag{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--gold);opacity:.9}.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--border);border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 12px 28px rgba(0,0,0,.18)}.hero{text-align:center}.coin{font-size:64px;filter:drop-shadow(0 8px 18px rgba(255,200,87,.4));margin:8px 0 2px}.h1,h1{margin:6px 0}.h2,h2{margin:0 0 12px;font-size:22px}.muted{color:var(--muted)}.small{font-size:12px}.balance{font-size:38px;font-weight:800;letter-spacing:-.04em;margin:10px 0 4px;color:var(--green)}.grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px}.stat{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:12px;padding:10px 12px}.stat-value{font-weight:700;margin-top:4px;font-size:16px}.btn{display:block;width:100%;border:none;border-radius:12px;padding:13px 14px;font-weight:800;font-size:15px;cursor:pointer;transition:transform .12s ease,opacity .12s ease;margin-top:12px}.btn:active{transform:translateY(1px)}.btn.gold{background:linear-gradient(180deg,#f8d56e,#e9b943);color:#1f1a0c}.btn.primary{background:linear-gradient(180deg,#6ea8ff,#4d7ce4);color:#fff}.btn.secondary{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)}.status{margin-top:12px;color:var(--muted);font-size:13px;line-height:1.5}.warning{margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(255,212,138,.08);border:1px solid rgba(255,212,138,.18);color:var(--warn);font-size:12px}.hidden{display:none!important}.field{width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.02);color:var(--text);outline:none}.field:focus{border-color:var(--blue)}.input-row{display:flex;gap:8px;margin-top:8px}.input-row input{flex:1}.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}.nav button{padding:12px 8px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text);font-weight:700;cursor:pointer}.nav button.active{background:linear-gradient(180deg,#1d2b48,#16233d);border-color:var(--blue)}.page{display:none}.page.active{display:block}.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:14px}.task-box{margin-top:12px;min-height:120px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.02);padding:10px}.task-box adsgram-task{display:block;min-height:80px}.warning,.status,.muted,.small{word-break:break-word}
+    .app{max-width:520px;margin:auto;padding:18px 15px 35px}.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.logo{font-size:23px;font-weight:800}.tag{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--gold);opacity:.9}.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--border);border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 12px 28px rgba(0,0,0,.18)}.hero{text-align:center}.coin{font-size:64px;filter:drop-shadow(0 8px 18px rgba(255,200,87,.4));margin:8px 0 2px}.h1,h1{margin:6px 0}.h2,h2{margin:0 0 12px;font-size:22px}.muted{color:var(--muted)}.small{font-size:12px}.balance{font-size:38px;font-weight:800;letter-spacing:-.04em;margin:10px 0 4px;color:var(--green)}.grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px}.stat{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:12px;padding:10px 12px}.stat-value{font-weight:700;margin-top:4px;font-size:16px}.btn{display:block;width:100%;border:none;border-radius:12px;padding:13px 14px;font-weight:800;font-size:15px;cursor:pointer;transition:transform .12s ease,opacity .12s ease;margin-top:12px}.btn:active{transform:translateY(1px)}.btn.gold{background:linear-gradient(180deg,#f8d56e,#e9b943);color:#1f1a0c}.btn.primary{background:linear-gradient(180deg,#6ea8ff,#4d7ce4);color:#fff}.btn.secondary{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)}.status{margin-top:12px;color:var(--muted);font-size:13px;line-height:1.5}.warning{margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(255,212,138,.08);border:1px solid rgba(255,212,138,.18);color:var(--warn);font-size:12px}.hidden{display:none!important}.field{width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.02);color:var(--text);outline:none}.field:focus{border-color:var(--blue)}.input-row{display:flex;gap:8px;margin-top:8px}.input-row input{flex:1}.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}.nav button{padding:12px 8px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text);font-weight:700;cursor:pointer}.nav button.active{background:linear-gradient(180deg,#1d2b48,#16233d);border-color:var(--blue)}.page{display:none}.page.active{display:block}.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:14px}.task-box{margin-top:12px;min-height:120px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.02);padding:10px}.warning,.status,.muted,.small{word-break:break-word}
   </style>
 </head>
 <body>
@@ -52,7 +51,7 @@
         <h2>🎁 Optional Reward Ad</h2>
         <p class="muted small">Ads are optional. Completed reward ads grant 5 Gold Energy.</p>
         <button class="btn primary" id="reward-button">Watch Optional Ad · +5 Gold</button>
-        <div class="status" id="reward-status">Configure your approved AdsGram Reward block ID first.</div>
+        <div class="status" id="reward-status">Ready to load the Telemonix reward ad.</div>
       </div>
       <div class="card">
         <h2>📋 Optional Task Ad</h2>
@@ -116,8 +115,6 @@
   <script>
     const CONFIG = {
       botUsername: "YOUR_BOT_USERNAME",
-      rewardBlockId: "YOUR_REWARD_BLOCK_ID",
-      taskBlockId: "task-YOUR_TASK_BLOCK_ID",
       dailyBonusGold: 5,
       energyPerAd: 5,
       energyPerTask: 5,
@@ -319,27 +316,33 @@
       if (tg?.openTelegramLink) tg.openTelegramLink(url); else window.open(url, "_blank");
     });
 
-    const telemonixAd = window.TelemonixAds && typeof window.TelemonixAds.init === "function"
-      ? window.TelemonixAds.init({
-          appCode: CONFIG.telemonixAppCode,
-          blockId: CONFIG.telemonixBlockId
-        })
-      : null;
+    let telemonixAd = null;
 
-    async function showTelemonixAd() {
-      const status = $("reward-status");
+    function ensureTelemonixAd() {
       if (!window.TelemonixAds || typeof window.TelemonixAds.init !== "function") {
-        status.textContent = "Telemonix SDK unavailable. Check the script and network connection.";
-        return;
+        return null;
       }
       if (!telemonixAd) {
-        status.textContent = "Preparing ad player...";
+        telemonixAd = window.TelemonixAds.init({
+          appCode: CONFIG.telemonixAppCode,
+          blockId: CONFIG.telemonixBlockId
+        });
+      }
+      return telemonixAd;
+    }
+
+    async function showTelemonixRewardAd() {
+      const status = $("reward-status");
+      const ad = ensureTelemonixAd();
+
+      if (!ad) {
+        status.textContent = "Telemonix SDK unavailable. Please check the script or network connection.";
         return;
       }
 
       try {
         status.textContent = "Loading ad...";
-        const result = await telemonixAd.show();
+        const result = await ad.show();
 
         if (result?.completed) {
           state.goldEnergy += CONFIG.energyPerAd;
@@ -353,18 +356,18 @@
         } else {
           status.textContent = "Ad not completed. No reward added.";
         }
-      } catch (error) {
+      } catch (_) {
         status.textContent = "Ad unavailable or closed. No reward added.";
       }
     }
 
-    $("reward-button").addEventListener("click", showTelemonixAd);
+    $("reward-button").addEventListener("click", showTelemonixRewardAd);
 
-    if (/^task-\d+$/.test(CONFIG.taskBlockId)) {
+    if (/^task-\d+$/.test("task-YOUR_TASK_BLOCK_ID")) {
       const container = $("task-container");
       container.replaceChildren();
       const task = document.createElement("adsgram-task");
-      task.setAttribute("data-block-id", CONFIG.taskBlockId);
+      task.setAttribute("data-block-id", "task-YOUR_TASK_BLOCK_ID");
       task.setAttribute("data-debug", "false");
       task.addEventListener("reward", () => {
         state.goldEnergy += CONFIG.energyPerTask;
